@@ -1,3 +1,12 @@
+#banner {
+	color: #000;
+	font-size: 48px;
+	letter-spacing: 0.2em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 body {
 	font-family: Cardo, Palatino, serif;
 }
@@ -7,11 +16,6 @@ blockquote {
 	quotes: none;
 }
 
-#banner {
-	color: #000;
-	font-size: 48px;
-	letter-spacing: 0.2em;
-	line-height: 1.5em;
-	text-transform: uppercase;
-	text-decoration: none;
+footer {
+	padding: 10px 0;
 }
