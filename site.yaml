@@ -7,6 +7,7 @@ license_name: CC BY 4.0
 license_url: //creativecommons.org/licenses/by/4.0/
 #media_dir: media
 output_dir: .
+pubkey_fingerprint: 89D7 EA3A BA2C 318E B949  0859 8463 DC06 1FEF AD67
 pubkey_id: 4096R/1FEFAD67 2014-01-03
 template_dir: template
 url: //jeffcaulfield.com

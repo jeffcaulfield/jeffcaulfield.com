@@ -39,3 +39,14 @@ header nav li {
 	font-style: italic;
 	line-height: 1.5em;
 }
+
+.container {
+	width: 640px;
+}
+
+.fingerprint {
+	color: #ccc;
+	font-family: monospace;
+	font-size: 10px;
+	margin-bottom: -30px;
+}

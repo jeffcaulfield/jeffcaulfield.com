@@ -19,6 +19,8 @@
       .container.text-center
         %a#banner{href:"{{ page.rel_site_url }}"}
           {{ site.author }}
+        .fingerprint
+          {{ site.pubkey_fingerprint }}
     %main
       .container
         -block content:
