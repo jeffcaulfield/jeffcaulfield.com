@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+%html{lang:'en'}
+  %head
+    %meta{charset:'utf-8'}
+    %title Jeff Caulfield - {{ page.title }}
+    %meta{content:'width=device-width, initial-scale=1', name:'viewport'}
+    %link{href:"{{ page.rel_site_url }}/assets/minimal.css", rel:'stylesheet'}
+    %link{href:'//fonts.googleapis.com/css?family=Cardo:400,400italic,700', rel:'stylesheet'}
+    %style body { font-family: Cardo, Palatino, serif; }
+    %style blockquote { font-family: Cardo, Palatino, serif; quotes: none; }
+    %style #banner { font-size: 48px; letter-spacing: 0.2em; line-height: 1.5em; text-transform: uppercase; }
+    %style a { color: #000; text-decoration: none; }
+    -#%style a:active { color: #c20; text-decoration: none; }
+    -#%style a:hover { color: #c20; text-decoration: none; }
+  %body
+    %header
+      .container.text-center
+        %a#banner{href:"{{ page.rel_site_url }}"} Jeff Caulfield
+    %main
+      .container
+        -block content:
+          {{ page.content }}
+    %footer
+      .container
+        %p#pubkey.float-right<
+          pub
+          %a{href:"{{ page.rel_site_url }}/assets/pubkey.txt"} 4096R/1FEFAD67
+          2014-01-03 89D7 EA3A BA2C 318E B949 0859 8463 DC06 1FEF AD67
+        %p#copyright<
+          &copy; 2016
+          = ' '
+          %a{href:"{{ page.rel_site_url }}"}> Jeff Caulfield
+          = '.'
+          = ' '
+          %a{href:'//creativecommons.org/licenses/by/4.0/'}> CC BY 4.0
+          = '.'
