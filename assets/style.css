@@ -1,0 +1,17 @@
+body {
+	font-family: Cardo, Palatino, serif;
+}
+
+blockquote {
+	font-family: Cardo, Palatino, serif;
+	quotes: none;
+}
+
+#banner {
+	color: #000;
+	font-size: 48px;
+	letter-spacing: 0.2em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
