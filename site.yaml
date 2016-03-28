@@ -1,6 +1,7 @@
 content_dir: content
 ext: .html
+license_url: //creativecommons.org/licenses/by/4.0/
 #media_dir: media
 output_dir: .
 template_dir: template
-url: http://jeffcaulfield.com
+url: //jeffcaulfield.com

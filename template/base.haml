@@ -18,12 +18,12 @@
     %footer
       .container
         %p#copyright.float-right<
-          &copy; 2016
+          &copy; {{ page.date.year }}
           = ' '
-          %a{href:"{{ page.rel_site_url }}"}> Jeff Caulfield
+          %a{href:"{{ site.url }}"}> Jeff Caulfield
           = '.'
           = ' '
-          %a{href:'//creativecommons.org/licenses/by/4.0/'}> CC BY 4.0
+          %a{href:"{{ site.license_url }}"}> CC BY 4.0
           = '.'
         %p#pubkey<
           pub
