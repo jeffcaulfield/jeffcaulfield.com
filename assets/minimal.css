@@ -18,7 +18,7 @@ nav ul li a { color: #333; }
 
 .container { position: relative; text-align: left; width: 960px; max-width: 90%; margin: 0 auto; }
 
-footer { border-top:1px solid #ccc; font-size:11px; line-height:26px; color:#999; }
+footer { border-top:1px solid #ddd; font-size:11px; line-height:26px; color:#999; }
 footer a { color:#999999; }
 footer a:hover { color:#105CB6; }
 footer ul li { display:inline; list-style:none; padding-left:20px; }
@@ -93,7 +93,7 @@ ol { margin-bottom: 20px; list-style-position:inside; }
 ul ul, ol ol { margin-bottom:0; }
 
 /* Form */
-fieldset { position: relative; border-top:1px solid #ccc; padding: 10px; margin-bottom:20px; }
+fieldset { position: relative; border-top:1px solid #ddd; padding: 10px; margin-bottom:20px; }
 fieldset legend { font-weight:bold; font-size:16px; padding: 0 5px; }
 
 /* Table */

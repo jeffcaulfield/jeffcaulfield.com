@@ -3,9 +3,9 @@
 -block content:
   %article
     %header
-      %h1
-        {{ page.title }}
-      %small
-        %time{datetime:"{{ page.date.isoformat() }}", pubdate:'pubdate'}
-          {{ page.date.strftime("%Y-%m-%d") }}
+      .text-center
+        %h1 {{ page.title }}
+        %small
+          %time{datetime:"{{ page.date.isoformat() }}", pubdate:'pubdate'}
+            {{ page.date.strftime("%Y-%m-%d") }}
     {{ page.content }}
