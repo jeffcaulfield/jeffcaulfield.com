@@ -1,7 +1,12 @@
+author: Jeff Caulfield
 content_dir: content
+disqus: jeffcaulfield
 ext: .html
+google_analytics: UA-60208611-1
+license_name: CC BY 4.0
 license_url: //creativecommons.org/licenses/by/4.0/
 #media_dir: media
 output_dir: .
+pubkey_id: 4096R/1FEFAD67 2014-01-03
 template_dir: template
 url: //jeffcaulfield.com

@@ -5,7 +5,9 @@
     %header
       .text-center
         %h1 {{ page.title }}
-        %small
-          %time{datetime:"{{ page.date.isoformat() }}", pubdate:'pubdate'}
-            {{ page.date.strftime("%Y-%m-%d") }}
+        %nav
+          %ul
+            %li
+              %time{datetime:"{{ page.date.isoformat() }}", pubdate:'pubdate'}
+                {{ page.date.strftime("%Y-%m-%d") }}
     {{ page.content }}

@@ -12,7 +12,9 @@
               %h2
                 %a{href:"{{ page.rel_site_url }}/{{ subpage.url }}"}
                   {{ subpage.title }}
-              %small
-                %time{datetime:"{{ subpage.date.isoformat() }}", pubdate:'pubdate'}
-                  {{ subpage.date.strftime("%Y-%m-%d") }}
+              %nav
+                %ul
+                  %li
+                    %time{datetime:"{{ subpage.date.isoformat() }}", pubdate:'pubdate'}
+                      {{ subpage.date.strftime("%Y-%m-%d") }}
           %p.text-center {{ subpage.excerpt }}
