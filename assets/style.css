@@ -36,4 +36,6 @@ header h1 a, header h2 a {
 
 header nav li {
 	font-size: 12px;
+	font-style: italic;
+	line-height: 1.5em;
 }

@@ -9,12 +9,20 @@
         %article
           %header
             .text-center
-              %h2
-                %a{href:"{{ page.rel_site_url }}/{{ subpage.url }}"}
-                  {{ subpage.title }}
               %nav
                 %ul
                   %li
+                    &mdash;
                     %time{datetime:"{{ subpage.date.isoformat() }}", pubdate:'pubdate'}
                       {{ subpage.date.strftime("%Y-%m-%d") }}
+                    &mdash;
+              %h2
+                %a{href:"{{ page.rel_site_url }}/{{ subpage.url }}"}
+                  {{ subpage.title }}
+              -if subpage.forum
+                %nav
+                  %ul
+                    %li
+                      %a{href:"{{ page.rel_site_url }}/{{ subpage.url }}#disqus_thread"}
+                        no comments
           %p.text-center {{ subpage.excerpt }}

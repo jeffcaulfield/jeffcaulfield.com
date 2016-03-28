@@ -4,13 +4,15 @@
   %article
     %header
       .text-center
-        %h1 {{ page.title }}
         %nav
           %ul
             %li
+              &mdash;
               %time{datetime:"{{ page.date.isoformat() }}", pubdate:'pubdate'}
                 {{ page.date.strftime("%Y-%m-%d") }}
-    
+              &mdash;
+        %h1 {{ page.title }}
+
     {{ page.content }}
 
     -if page.forum
