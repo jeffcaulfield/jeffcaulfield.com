@@ -10,4 +10,14 @@
             %li
               %time{datetime:"{{ page.date.isoformat() }}", pubdate:'pubdate'}
                 {{ page.date.strftime("%Y-%m-%d") }}
+    
     {{ page.content }}
+
+    -if page.forum
+      #disqus_thread
+      %script
+        (function() {
+          var s = document.createElement('script'); s.async = true;
+          s.src = '//{{ site.disqus }}.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+        })();
