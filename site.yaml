@@ -3,4 +3,4 @@ ext: .html
 #media_dir: media
 output_dir: .
 template_dir: template
-#url: jeffcaulfield.com
+url: http://jeffcaulfield.com
