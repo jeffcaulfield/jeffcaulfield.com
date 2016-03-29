@@ -1,10 +1,14 @@
 #banner {
 	color: #000;
-	font-size: 48px;
-	letter-spacing: 0.2em;
+	font-size: 40px;
+	letter-spacing: 0.15em;
 	line-height: 1.5em;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+.container {
+	width: 640px;
 }
 
 body {
@@ -23,7 +27,7 @@ footer {
 
 header h1, header h2 {
 	font-weight: 400;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.15em;
 	line-height: 1.5em;
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -38,15 +42,4 @@ header nav li {
 	font-size: 12px;
 	font-style: italic;
 	line-height: 1.5em;
-}
-
-.container {
-	width: 640px;
-}
-
-.fingerprint {
-	color: #ccc;
-	font-family: monospace;
-	font-size: 10px;
-	margin-bottom: -30px;
 }

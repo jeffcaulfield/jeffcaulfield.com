@@ -19,22 +19,21 @@
       .container.text-center
         %a#banner{href:"{{ page.rel_site_url }}"}
           {{ site.author }}
-        .fingerprint
-          {{ site.pubkey_fingerprint }}
     %main
       .container
         -block content:
           {{ page.content }}
     %footer
       .container
-        %p#pubkey.float-right<
-          pub
-          %a{href:"{{ page.rel_site_url }}/assets/pubkey.txt"}<
-            {{ site.pubkey_id }}
-        %p#copyright<
-          &copy; {{ page.date.year }}
-          %a{href:"{{ site.url }}"}<
-            {{ site.author }}
-          &middot
-          %a{href:"{{ site.license_url }}"}<
-            {{ site.license_name }}
+        .row
+          %p#copyright.col-7<
+            &copy; {{ page.date.year }}
+            %a{href:"{{ site.url }}"}<
+              {{ site.author }}
+            &middot
+            %a{href:"{{ site.license_url }}"}<
+              {{ site.license_name }}
+          %p#pubkey.col-5.text-right<
+            pub
+            %a{href:"{{ page.rel_site_url }}/assets/pubkey.txt"}<
+              {{ site.pubkey_id }}
