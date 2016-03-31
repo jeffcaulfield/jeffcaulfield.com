@@ -2,11 +2,11 @@
 -block content:
   %article
     %header.text-center
+      %nav
+        %time{datetime:"{{ page.date.isoformat() }}"}<
+          {{ page.date.strftime("%Y-%m-%d") }}
       %h1<
         {{ page.title }}
-      %nav
-        %time{datetime:"{{ page.date.isoformat() }}", pubdate:'pubdate'}<
-          {{ page.date.strftime("%Y-%m-%d") }}
     {{ page.content }}
     -if page.forum
       #disqus_thread

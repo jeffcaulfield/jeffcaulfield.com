@@ -1,10 +1,19 @@
 #banner {
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+#banner a {
 	color: #000;
 	font-size: 40px;
-	letter-spacing: 0.15em;
 	line-height: 1.5em;
-	text-transform: uppercase;
 	text-decoration: none;
+}
+
+#banner small {
+	display: block;
+	font-size: 14px;
+	line-height: 1.5em;
 }
 
 .container {
@@ -21,7 +30,7 @@ blockquote {
 }
 
 footer {
-	margin-top: 10px;
+	margin-top: 20px;
 	padding: 10px 0;
 }
 
@@ -39,15 +48,44 @@ header h1 a, header h2 a {
 }
 
 header nav {
-	font-size: 12px;
 	font-style: italic;
+}
+
+header nav li {
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+header nav li:last-child {
+	margin-right: 0;
+}
+
+header nav time {
+	font-size: 12px;
 	line-height: 1.5em;
 }
 
 header nav time:after {
 	content: '—';
+	margin-left: 4px;
 }
 
 header nav time:before {
 	content: '—';
+	margin-right: 4px;
+}
+
+main {
+	font-size: 20px;
+	letter-spacing: 0.01em;
+	line-height: 1.5em;
+}
+
+main:after {
+	display: block;
+	color: #333;
+	content: '❧';
+	font-size: 40px;
+	margin: 40px auto;
+	text-align: center;
 }

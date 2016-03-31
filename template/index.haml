@@ -6,16 +6,17 @@
       -for subpage in page.subpages:
         %article
           %header.text-center
+            %nav
+              %time{datetime:"{{ subpage.date.isoformat() }}"}<
+                {{ subpage.date.strftime("%Y-%m-%d") }}
             %h2
               %a{href:"{{ page.rel_site_url }}/{{ subpage.url }}"}<
                 {{ subpage.title }}
-            %nav
-              %time{datetime:"{{ subpage.date.isoformat() }}", pubdate:'pubdate'}<
-                {{ subpage.date.strftime("%Y-%m-%d") }}
             -if subpage.forum
-              %ul
-                %li
-                  %a{href:"{{ page.rel_site_url }}/{{ subpage.url }}#disqus_thread"}<
-                    no comments
+              %nav
+                %ul
+                  %li
+                    %a{href:"{{ page.rel_site_url }}/{{ subpage.url }}#disqus_thread"}<
+                      no comments
           %p.text-center<
             {{ subpage.excerpt }}

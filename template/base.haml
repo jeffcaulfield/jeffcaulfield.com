@@ -16,9 +16,12 @@
     %title {{ site.author }} - {{ page.title }}
   %body
     %header
-      .container.text-center
-        %a#banner{href:"{{ page.rel_site_url }}"}<
-          {{ site.author }}
+      .container
+        #banner.text-center
+          %a{href:"{{ page.rel_site_url }}"}<
+            {{ site.author }}
+          %small<
+            {{ site.tagline }}
     %main
       .container
         -block content:
