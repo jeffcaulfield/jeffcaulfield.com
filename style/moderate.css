@@ -82,18 +82,26 @@ header nav li:last-child {
 header nav time {
 	font-size: 12px;
 	line-height: 1.5em;
+	position: relative;
+}
+
+header nav time:after,
+header nav time:before {
+	background-color: #ddd;
+	content: '';
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 51%;
+	width: 50%;
 }
 
 header nav time:after {
-	color: #999;
-	content: '—';
-	margin-left: 4px;
+	margin-left: 5%;
 }
 
 header nav time:before {
-	color: #999;
-	content: '—';
-	margin-right: 4px;
+	margin-left: -55%;
 }
 
 main {
