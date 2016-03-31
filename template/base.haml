@@ -20,8 +20,9 @@
         #banner.text-center
           %a{href:"{{ page.rel_site_url }}"}<
             {{ site.author }}
-          %small<
-            {{ site.tagline }}
+          -if site.tagline
+            %small<
+              {{ site.tagline }}
     %main
       .container
         -block content:
