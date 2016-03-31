@@ -20,6 +20,15 @@
 	width: 720px;
 }
 
+article:after {
+	display: block;
+	color: #333;
+	content: '❧';
+	font-size: 40px;
+	margin: 20px auto;
+	text-align: center;
+}
+
 body {
 	font-family: Cardo, Palatino, serif;
 }
@@ -30,7 +39,7 @@ blockquote {
 }
 
 footer {
-	margin-top: 20px;
+	margin-top: 40px;
 	padding: 10px 0;
 }
 
@@ -79,15 +88,6 @@ main {
 	font-size: 20px;
 	letter-spacing: 0.01em;
 	line-height: 1.5em;
-}
-
-main:after {
-	display: block;
-	color: #333;
-	content: '❧';
-	font-size: 40px;
-	margin: 40px auto;
-	text-align: center;
 }
 
 main p {
