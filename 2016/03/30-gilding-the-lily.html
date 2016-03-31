@@ -37,9 +37,12 @@
       </nav>
       <h1>Gilding the Lily</h1>
     </header>
-    <p>I tried a wide variety of static site generators on my way to rebuilding my personal website: <a href="https://hexo.io/">hexo</a>, <a href="https://gohugo.io/">hugo</a> and <a href="https://sculpin.io/">sculpin</a>, just to name a few. These all seem far too complicated for what they are meant to do, and definitely overkill for what I need.</p>
-<p>After some searching, I finally stumbled across <a href="http://boscoh.github.io/embellish/">embellish</a>. It's very lightweight. It doesn't require a ton of files to get started. It's written in <a href="https://www.python.org/">Python</a>. TK: what else I liked about it, what seemed to be lacking or unnecessary for my needs, why I felt I should write my own SSG...</p>
-<p>(To be continued...)</p>
+    <p>I tried a variety of static site generators on my way to rebuilding my personal website: <a href="https://hexo.io/">hexo</a>, <a href="https://gohugo.io/">hugo</a> and <a href="https://sculpin.io/">sculpin</a>, just to name a few. These all seem very complicated for what they purport to be, and definitely overkill for my needs.</p>
+<p>Eventually, I stumbled across <a href="http://boscoh.github.io/embellish/">embellish</a>. It's very lightweight. It doesn't require a ton of files to get started. It's written in <a href="https://www.python.org/">Python</a>. I was able to get something off the ground quickly without getting bogged down in excessive detail.</p>
+<p>There's still some "fat" that could yet be trimmed, I feel. I  don't understand the need to use <a href="http://haml.info/">Haml</a> for templates when <a href="http://jinja.pocoo.org/">Jinja</a> is fine on its own. I'm not using compiled assets (<a href="http://coffeescript.org/">CoffeeScript</a>, <a href="http://sass-lang.com/">Sass</a> and so forth), although that's not to say that I might not want to later on. I'd like the command-line to auto-detect "site.yaml" when it is present. I'd also like to remove or at least rename the "site.cache" file.</p>
+<p>At the same time, there are a few small but important features that are missing. A <a href="http://www.sitemaps.org/">sitemap</a> and a syndication feed (<a href="http://atomenabled.org/">Atom</a> and/or <a href="http://www.whatisrss.com/">RSS</a> format) should be automatic. Pagination might be useful for large archive indexes. I'd also like a simple way to add site-specific extensions (Python scripts) to customise the render process.</p>
+<p>This all seems acheivable. I think I'll call it <a href="https://github.com/jeffcaulfield/gild">gild</a> as in "gilding the lily" in keeping with the theme of embellishment.</p>
+<p>What could <em>possibly</em> go wrong?</p>
     
   </article>
 
