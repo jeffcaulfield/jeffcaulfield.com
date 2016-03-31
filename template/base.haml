@@ -28,14 +28,13 @@
           {{ page.content }}
     %footer
       .container
-        .row
-          %p#copyright.col-8<
-            &copy; {{ page.date.year }}
-            %a{href:"{{ site.url }}"}<
-              {{ site.author }}
-            &middot;
-            %a{href:"{{ site.license_url }}"}<
-              {{ site.license_name }}
-          %p#pubkey.col-4.text-right<
-            %a{href:"{{ page.rel_site_url }}/assets/pubkey.txt"}<
-              {{ site.pubkey_id }}
+        %span#pubkey.float-right<
+          %a{href:"{{ page.rel_site_url }}/assets/pubkey.txt"}<
+            {{ site.pubkey_id }}
+        %span#copyright<
+          &copy; {{ page.date.year }}
+          %a{href:"{{ site.url }}"}<
+            {{ site.author }}
+          &middot;
+          %a{href:"{{ site.license_url }}"}<
+            {{ site.license_name }}
