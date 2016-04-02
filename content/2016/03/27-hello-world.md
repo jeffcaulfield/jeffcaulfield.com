@@ -5,7 +5,7 @@ template: post.haml
 This is only a test. If this were a real blog post you would be bored to tears by now.
 ---
 
-I built a new personal website using [embellish](http://boscoh.github.io/embellish/) and [github.io](https://pages.github.com/). The following links proved to be useful in the process.
+I built a new personal website using [embellish](http://boscoh.github.io/embellish/) and [github.io](https://pages.github.com/). The following links proved useful in the process.
 
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Hamlish-jinja](https://github.com/Pitmairen/hamlish-jinja)
