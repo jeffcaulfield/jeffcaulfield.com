@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Pelican Brief - Jeff Caulfield</title>
+
+
+    <link rel="stylesheet" href="https:////fonts.googleapis.com/css?family=Cardo:400,400italic,700" />
+    <link rel="stylesheet" href="/theme/style/minimal.css" />
+    <link rel="stylesheet" href="/theme/style/moderate.css" />
+
+
+
+
+    <meta name="tags" content="pelican" />
+
+</head>
+<body>
+
+    <header id="banner">
+        <div class="container text-center">
+            <a href="/">Jeff Caulfield</a>
+            <small>Caution: Abstraction Ahead</small>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <div class="container">
+            <ul>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+<article>
+
+    <header>
+        <nav>
+            <time class="published" datetime="2016-08-27T09:30:00+01:00"> 27/08/2016 </time>
+        </nav>
+        <h1>The Pelican Brief</h1>
+        <nav>
+            <ul>
+                <li>by
+                    <a href="/author/jeff-caulfield.html">Jeff Caulfield</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <p>Enough with trying to roll my own static site generator. Let's give <a href="http://blog.getpelican.com/">Pelican</a> a go.</p>
+<div class="highlight"><pre>pip install pelican markdown
+mkdir test-pelican
+cd test-pelican
+pelican-quickstart
+</pre></div>
+
+
+<p>I answered the site generation questions as follows.</p>
+<div class="highlight"><pre>&gt; Where do you want to create your new web site? [.]
+&gt; What will be the title of this web site? Jeff Caulfield
+&gt; Who will be the author of this web site? Jeff Caulfield
+&gt; What will be the default language of this web site? [en]
+&gt; Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
+&gt; What is your URL prefix? (see above example; no trailing slash) http://jeffcaulfield.com
+&gt; Do you want to enable article pagination? (Y/n)
+&gt; How many articles per page do you want? [10]
+&gt; What is your time zone? [Europe/Paris] Europe/London
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n)
+&gt; Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site development? (Y/n)
+&gt; Do you want to upload your website using FTP? (y/N)
+&gt; Do you want to upload your website using SSH? (y/N)
+&gt; Do you want to upload your website using Dropbox? (y/N)
+&gt; Do you want to upload your website using S3? (y/N)
+&gt; Do you want to upload your website using Rackspace Cloud Files? (y/N)
+&gt; Do you want to upload your website using GitHub Pages? (y/N) y
+&gt; Is this your personal page (username.github.io)? (y/N) y
+</pre></div>
+
+
+<p>I then copied across content from my existing website and modified the metadata to use Title case, keeping all articles under the <code>content</code> folder instead of nesting folders by year, and started the development server.</p>
+<div class="highlight"><pre>./develop_server.sh start
+</pre></div>
+
+
+<p>I made a number of changes to <code>pelicanconf.py</code> to use my own theme, which I created by adapting the <code>simple</code> theme, taking some hints from the <code>notmyidea</code> theme.</p>
+    </div>
+
+
+</article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="float-right">
+                <a href="/pubkey.txt">4096R/1FEFAD67</a>
+            </span>
+            <span class="copyright">
+                © 2016 <a href="">Jeff Caulfield</a>
+                · <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            </span>
+        </div>
+    </footer>
+
+
+</body>
+</html>

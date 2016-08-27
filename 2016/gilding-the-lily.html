@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gilding the Lily - Jeff Caulfield</title>
+
+
+    <link rel="stylesheet" href="https:////fonts.googleapis.com/css?family=Cardo:400,400italic,700" />
+    <link rel="stylesheet" href="/theme/style/minimal.css" />
+    <link rel="stylesheet" href="/theme/style/moderate.css" />
+
+
+
+
+
+</head>
+<body>
+
+    <header id="banner">
+        <div class="container text-center">
+            <a href="/">Jeff Caulfield</a>
+            <small>Caution: Abstraction Ahead</small>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <div class="container">
+            <ul>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+<article>
+
+    <header>
+        <nav>
+            <time class="published" datetime="2016-03-30T12:00:00+01:00"> 30/03/2016 </time>
+        </nav>
+        <h1>Gilding the Lily</h1>
+        <nav>
+            <ul>
+                <li>by
+                    <a href="/author/jeff-caulfield.html">Jeff Caulfield</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <p>I tried a variety of static site generators on my way to rebuilding my personal website: <a href="https://hexo.io/">hexo</a>, <a href="https://gohugo.io/">hugo</a> and <a href="https://sculpin.io/">sculpin</a>, just to name a few. These all seem very complicated for what they purport to be, and definitely overkill for my needs.</p>
+<p>Eventually, I stumbled across <a href="http://boscoh.github.io/embellish/">embellish</a>. It's written in <a href="https://www.python.org/">Python</a>. It's very lightweight. It doesn't require a ton of files to get started. I was able to get something off the ground quickly without becoming bogged down in excessive detail. Very nice.</p>
+<p>That said, I feel that there's some "fat" that could yet be trimmed. I  don't understand the need to use <a href="http://haml.info/">Haml</a> for templates when <a href="http://jinja.pocoo.org/">Jinja</a> is fine on its own. I'm not using compiled assets (<a href="http://coffeescript.org/">CoffeeScript</a>, <a href="http://sass-lang.com/">Sass</a> and so forth), although that's not to say that I might not want to do so later on. I'd like the command-line to auto-detect "site.yaml" when it is present. I'd also like to remove or at least rename the "site.cache" file.</p>
+<p>At the same time, there are a few small but important features that are missing. A <a href="http://www.sitemaps.org/">sitemap</a> and a syndication feed in <a href="http://atomenabled.org/">Atom</a> and/or <a href="http://www.whatisrss.com/">RSS</a> format should be a given. A "draft" mode for content in progress also seems essential. Pagination would be useful for large archive indexes. Finally, I'd like a simple way to add site-specific extensions (Python scripts) to customise the render process, if at all possible.</p>
+<p>This all seems acheivable. I think I'll call it <a href="https://github.com/jeffcaulfield/gild">gild</a> as in "gilding the lily" in keeping with the theme of embellishment.</p>
+<p>What could <em>possibly</em> go wrong?</p>
+    </div>
+
+
+</article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="float-right">
+                <a href="/pubkey.txt">4096R/1FEFAD67</a>
+            </span>
+            <span class="copyright">
+                © 2016 <a href="">Jeff Caulfield</a>
+                · <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            </span>
+        </div>
+    </footer>
+
+
+</body>
+</html>

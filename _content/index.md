@@ -1,9 +1,0 @@
-index: True
-#max_subpages: 5
-sort_key: date
-sort_reverse: True
-template: index.haml
-title: "Caution: Abstraction Ahead"
----
-
-I'm a [certified engineering technologist](http://www.aset.ab.ca/Become-a-Member/Professional-Pathway/Designation-Requirements/Become-a-Member/C-E-T.aspx): I write software for a living and sometimes just for fun. If you want to get in touch then please send a message to [me@jeffcaulfield.com](mailto:me@jeffcaulfield.com).
