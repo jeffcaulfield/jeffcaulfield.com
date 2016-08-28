@@ -1,35 +1,3 @@
-#banner {
-	letter-spacing: 0.15em;
-	text-transform: uppercase;
-}
-
-#banner a {
-	color: #000;
-	font-size: 40px;
-	line-height: 1.5em;
-	text-decoration: none;
-}
-
-#banner small {
-	display: block;
-	font-size: 12px;
-	letter-spacing: 0.25em;
-	line-height: 1.5em;
-}
-
-#banner small:before {
-	border-top: 1px solid #ddd;
-	display: block;
-	content: '';
-	margin: 8px auto 20px;
-	text-align: center;
-	width: 120px;
-}
-
-.container {
-	width: 720px;
-}
-
 article:after {
 	display: block;
 	color: #333;
@@ -76,6 +44,10 @@ header {
 	text-align: center;
 }
 
+header div.container {
+	text-align: center;
+}
+
 header nav {
 	font-style: italic;
 }
@@ -89,14 +61,14 @@ header nav li:last-child {
 	margin-right: 0;
 }
 
-header nav time {
+header time.published {
 	font-size: 12px;
 	line-height: 1.5em;
 	position: relative;
 }
 
-header nav time:after,
-header nav time:before {
+header time:after,
+header time:before {
 	background-color: #ddd;
 	content: '';
 	height: 1px;
@@ -106,11 +78,11 @@ header nav time:before {
 	width: 50%;
 }
 
-header nav time:after {
+header time:after {
 	margin-left: 5%;
 }
 
-header nav time:before {
+header time:before {
 	margin-left: -55%;
 }
 
@@ -122,4 +94,57 @@ main {
 
 main p {
 	text-align: justify;
+}
+
+#banner {
+	letter-spacing: 0.15em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#banner a {
+	color: #000;
+	font-size: 40px;
+	line-height: 1.5em;
+	text-decoration: none;
+}
+
+#banner small {
+	display: block;
+	font-size: 12px;
+	letter-spacing: 0.25em;
+	line-height: 1.5em;
+}
+
+#banner small:before {
+	border-top: 1px solid #ddd;
+	display: block;
+	content: '';
+	margin: 8px auto 20px;
+	text-align: center;
+	width: 120px;
+}
+
+#menu {
+	border-bottom: 1px solid #ddd;
+	letter-spacing: 0.25em;
+	line-height: 1.5em;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+#menu div.container {
+	text-align: center;
+}
+
+#menu li.active a {
+	/*text-decoration: underline;*/
+}
+
+.container {
+	width: 720px;
+}
+
+.summary p {
+	text-align: center;
 }
