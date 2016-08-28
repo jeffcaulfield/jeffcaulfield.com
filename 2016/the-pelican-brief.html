@@ -57,13 +57,16 @@
         <nav>
             <ul>
                 <li>by
-                    <a href="http://jeffcaulfield.com/author/jeff-caulfield.html">Jeff Caulfield</a>
+                    <a class="author" href="http://jeffcaulfield.com/author/jeff-caulfield.html">Jeff Caulfield</a>
+                </li>
+                <li>under
+                    “<a class="category" href="http://jeffcaulfield.com/category/publishing.html">publishing</a>”
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <div class="content">
         <p>Enough with trying to roll my own static site generator. Let's give <a href="http://blog.getpelican.com/">Pelican</a> a go.</p>
 <div class="highlight"><pre>pip install pelican markdown
 mkdir test-pelican
@@ -102,6 +105,14 @@ pelican-quickstart
 <p>I made a number of changes to <code>pelicanconf.py</code> to use my own theme, which I created by adapting the <code>simple</code> theme, taking some hints from the <code>notmyidea</code> theme. Getting it pushed to github.io was a bit of a pain. In the end I combined information from <a href="https://fedoramagazine.org/make-github-pages-blog-with-pelican/">several</a> <a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">sources</a> and decided on using a submodule to accomplish what I wanted. Not the cleanest approach, but it seems to work.</p>
 <p>My procedure for updating this website involves running <code>make publish</code> followed by <code>cd output &amp;&amp; git commit &amp;&amp; git push</code>.</p>
     </div>
+
+    <nav class="index">
+        <ul>
+            <li>
+                #<a class="tag" href="http://jeffcaulfield.com/tag/pelican.html">pelican</a>
+            </li>
+        </ul>
+    </nav>
 
 </article>
 

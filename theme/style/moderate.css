@@ -22,6 +22,14 @@ code {
 	padding: 0;
 }
 
+div.container {
+	width: 720px;
+}
+
+div.summary p {
+	text-align: center;
+}
+
 footer {
 	margin-top: 40px;
 	padding: 10px 0;
@@ -48,7 +56,7 @@ header div.container {
 	text-align: center;
 }
 
-header nav {
+header nav a {
 	font-style: italic;
 }
 
@@ -63,6 +71,7 @@ header nav li:last-child {
 
 header time.published {
 	font-size: 12px;
+	font-style: italic;
 	line-height: 1.5em;
 	position: relative;
 }
@@ -94,6 +103,10 @@ main {
 
 main p {
 	text-align: justify;
+}
+
+nav.index a {
+	font-style: italic;
 }
 
 #banner {
@@ -137,14 +150,10 @@ main p {
 	text-align: center;
 }
 
+#menu a {
+	white-space: nowrap;
+}
+
 #menu li.active a {
 	/*text-decoration: underline;*/
-}
-
-.container {
-	width: 720px;
-}
-
-.summary p {
-	text-align: center;
 }
