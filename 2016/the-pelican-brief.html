@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>The Pelican Brief - Jeff Caulfield</title>
+    <title>The Pelican&nbsp;Brief - Jeff Caulfield</title>
 
     <link href="http://jeffcaulfield.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jeff Caulfield Full Atom Feed" />
     <link href="http://jeffcaulfield.com/feeds/publishing.atom.xml" type="application/atom+xml" rel="alternate" title="Jeff Caulfield Categories Atom Feed" />
@@ -42,7 +42,7 @@
                 <li
                 ><a href="http://jeffcaulfield.com/tags.html">Tags</a></li>
                 <li
-                ><a href="http://jeffcaulfield.com/about.html">About me</a></li>
+                ><a href="http://jeffcaulfield.com/about.html">About&nbsp;me</a></li>
             </ul>
         </div>
     </nav>
@@ -53,7 +53,7 @@
 
     <header>
         <time class="published" datetime="2016-08-27T09:30:00+01:00">27/08/2016</time>
-        <h1>The Pelican Brief</h1>
+        <h1>The Pelican&nbsp;Brief</h1>
         <nav>
             <ul>
                 <li>by
@@ -67,7 +67,7 @@
     </header>
 
     <div class="content">
-        <p>Enough with trying to roll my own static site generator. Let's give <a href="http://blog.getpelican.com/">Pelican</a> a go.</p>
+        <p>Enough with trying to roll my own static site generator. Let&#8217;s give <a href="http://blog.getpelican.com/">Pelican</a> a&nbsp;go.</p>
 <div class="highlight"><pre>pip install pelican markdown
 mkdir test-pelican
 cd test-pelican
@@ -75,7 +75,7 @@ pelican-quickstart
 </pre></div>
 
 
-<p>I answered the site generation questions as follows.</p>
+<p>I answered the site generation questions as&nbsp;follows.</p>
 <div class="highlight"><pre>&gt; Where do you want to create your new web site? [.]
 &gt; What will be the title of this web site? Jeff Caulfield
 &gt; Who will be the author of this web site? Jeff Caulfield
@@ -97,12 +97,12 @@ pelican-quickstart
 </pre></div>
 
 
-<p>I then copied across content from my existing website and modified the metadata to use Title case, keeping all articles under the <code>content</code> folder instead of nesting folders by year, and started the development server.</p>
+<p>I then copied across content from my existing website and modified the metadata to use Title case, keeping all articles under the <code>content</code> folder instead of nesting folders by year, and started the development&nbsp;server.</p>
 <div class="highlight"><pre>./develop_server.sh start
 </pre></div>
 
 
-<p>I made a number of changes to <code>pelicanconf.py</code> to use my own theme, which I created by adapting the <code>simple</code> theme, taking some hints from the <code>notmyidea</code> theme. Getting it pushed to github.io was a bit of a pain. In the end I combined information from <a href="https://fedoramagazine.org/make-github-pages-blog-with-pelican/">several</a> <a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">sources</a> and decided on using a submodule to accomplish what I wanted. Not the cleanest approach, but it seems to work.</p>
+<p>I made a number of changes to <code>pelicanconf.py</code> to use my own theme, which I created by adapting the <code>simple</code> theme, taking some hints from the <code>notmyidea</code> theme. Getting it pushed to github.io was a bit of a pain. In the end I combined information from <a href="https://fedoramagazine.org/make-github-pages-blog-with-pelican/">several</a> <a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">sources</a> and decided on using a submodule to accomplish what I wanted. Not the cleanest approach, but it seems to&nbsp;work.</p>
 <p>My procedure for updating this website involves running <code>make publish</code> followed by <code>cd output &amp;&amp; git commit &amp;&amp; git push</code>.</p>
     </div>
 
