@@ -7,6 +7,30 @@ article:after {
 	text-align: center;
 }
 
+article.summary header {
+	border: none;
+	margin-bottom: 16px;
+	padding-bottom: 0;
+}
+
+article.summary div.content p {
+	margin-bottom: 8px;
+	text-align-last: center;
+}
+
+article.summary div.content:before {
+	border-top: 1px solid #ddd;
+	display: block;
+	content: '';
+	margin: 8px auto 20px;
+	text-align: center;
+	width: 120px;
+}
+
+article.summary nav.index a {
+	font-size: 12px;
+}
+
 body {
 	font-family: Cardo, Palatino, serif;
 }
@@ -24,10 +48,6 @@ code {
 
 div.container {
 	width: 720px;
-}
-
-div.summary p {
-	text-align: center;
 }
 
 footer {
@@ -56,43 +76,9 @@ header div.container {
 	text-align: center;
 }
 
-header nav a {
-	font-style: italic;
-}
-
-header nav li {
-	font-size: 12px;
-	line-height: 1.5em;
-}
-
-header nav li:last-child {
-	margin-right: 0;
-}
-
 header time.published {
 	font-size: 12px;
 	font-style: italic;
-	line-height: 1.5em;
-	position: relative;
-}
-
-header time:after,
-header time:before {
-	background-color: #ddd;
-	content: '';
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	top: 51%;
-	width: 50%;
-}
-
-header time:after {
-	margin-left: 5%;
-}
-
-header time:before {
-	margin-left: -55%;
 }
 
 main {
@@ -105,8 +91,16 @@ main p {
 	text-align: justify;
 }
 
+nav.index {
+	text-align: center;
+}
+
 nav.index a {
 	font-style: italic;
+}
+
+nav li:last-child {
+	margin-right: 0;
 }
 
 #banner {
