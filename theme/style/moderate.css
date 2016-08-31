@@ -43,6 +43,7 @@ blockquote {
 code {
 	background-color: transparent;
 	display: inline;
+	font-size: 18px;
 	padding: 0;
 }
 
@@ -91,6 +92,14 @@ main p {
 	text-align: justify;
 }
 
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav li a {
+	white-space: nowrap;
+}
+
 nav.index {
 	text-align: center;
 }
@@ -99,8 +108,24 @@ nav.index a {
 	font-style: italic;
 }
 
-nav li:last-child {
-	margin-right: 0;
+/*
+nav.metadata {
+	margin-bottom: 20px;
+	margin-top: -20px;
+}
+
+nav.metadata li {
+	margin-right: 10px;
+}
+
+nav.metadata li a {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+*/
+
+pre {
+	font-size: 16px;
 }
 
 #banner {
@@ -144,10 +169,8 @@ nav li:last-child {
 	text-align: center;
 }
 
-#menu a {
-	white-space: nowrap;
-}
-
+/*
 #menu li.active a {
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 }
+*/
