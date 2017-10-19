@@ -44,7 +44,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>JeffCaulfield  — © 2017 Jeff Caulfield | CC BY 4.0</title>
+<title>JeffCaulfield — © 2017 Jeff Caulfield | CC BY 4.0</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 
@@ -128,9 +128,15 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Title</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
+
 <li>$:/core</li>
+
+<li>$:/core/ui/PageTemplate/sidebar</li>
 
 <li>$:/DefaultTiddlers</li>
 
@@ -220,8 +226,14 @@ Error message and password prompt
 <div created="20171015131709436" modified="20171015194503059" title="$:/config/NewJournal/Title" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>YYYY-0MM-0DD</pre>
 </div>
+<div created="20171019073848735" modified="20171019073849786" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>show</pre>
+</div>
 <div created="20171017182244608" modified="20171017182245664" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
+</div>
+<div created="20171019073826364" modified="20171019073827411" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>hide</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.14" revision="0" bag="default">
 <pre>{
@@ -8420,6 +8432,37 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20171019073923901" modified="20171019074654117" tags="$:/tags/PageTemplate" title="$:/core/ui/PageTemplate/sidebar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$scrollable fallthrough=&quot;no&quot; class=&quot;tc-sidebar-scrollable&quot;&gt;
+
+&lt;div class=&quot;tc-sidebar-header&quot;&gt;
+
+&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;match&quot; text=&quot;yes&quot; default=&quot;yes&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
+
+&lt;h1 class=&quot;tc-site-title&quot;&gt;
+
+&lt;$transclude tiddler=&quot;$:/SiteTitle&quot; mode=&quot;inline&quot;/&gt;
+
+&lt;/h1&gt;
+
+&lt;div class=&quot;tc-site-subtitle&quot;&gt;
+
+&lt;$transclude tiddler=&quot;$:/SiteSubtitle&quot; mode=&quot;inline&quot;/&gt;
+|
+&lt;a href=&quot;/atom.xml&quot;&gt;&lt;i class=&quot;fa fa-rss&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+{{||$:/core/ui/PageTemplate/pagecontrols}}
+
+&lt;$transclude tiddler=&quot;$:/core/ui/SideBarLists&quot; mode=&quot;inline&quot;/&gt;
+
+&lt;/$reveal&gt;
+
+&lt;/div&gt;
+
+&lt;/$scrollable&gt;</pre>
+</div>
 <div created="20171015131841728" modified="20171019072752406" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>JeffCaulfield
 [tag[Journal]!has[draft.of]!sort[created]limit[3]]</pre>
@@ -10957,8 +11000,8 @@ Error message and password prompt
 <div created="20171015131706484" modified="20171018194800238" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>© &lt;&lt;now YYYY&gt;&gt; Jeff Caulfield | [[CC BY 4.0|http://creativecommons.org/licenses/by/4.0/]]</pre>
 </div>
-<div created="20171015131704205" modified="20171018194842996" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>JeffCaulfield &lt;a href=&quot;/atom.xml&quot;&gt;&lt;i class=&quot;fa fa-rss&quot;&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+<div created="20171015131704205" modified="20171019073910197" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>JeffCaulfield</pre>
 </div>
 <div list="JeffCaulfield [[2017-10-17 Topics of Interest]] [[2017-10-15 A Fresh Start]]" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
