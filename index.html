@@ -44,7 +44,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>JeffCaulfield — © 2017 Jeff Caulfield | CC BY 4.0 | </title>
+<title>JeffCaulfield — © 2017 Jeff Caulfield | CC BY 4.0 |  </title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 
@@ -184,6 +184,8 @@ Error message and password prompt
 
 <li>2017-10-17 Topics of Interest</li>
 
+<li>2017-10-22 In Vera Veritas</li>
+
 <li>BlackdownHills</li>
 
 <li>CellularAutomata</li>
@@ -199,6 +201,8 @@ Error message and password prompt
 <li>JeffCaulfield.jpg</li>
 
 <li>MicroscopeRPG</li>
+
+<li>PublicKey</li>
 
 <li>VimEditor</li>
 
@@ -10964,13 +10968,13 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20171015131706484" modified="20171020073800727" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>© &lt;&lt;now YYYY&gt;&gt; Jeff Caulfield | [[CC BY 4.0|http://creativecommons.org/licenses/by/4.0/]] | &lt;a href=&quot;/atom.xml&quot; rel=&quot;alternate&quot; type=&quot;application/atom+xml&quot;&gt;&lt;i class=&quot;fa fa-rss&quot;&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+<div created="20171015131706484" modified="20171022110151001" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>© &lt;&lt;now YYYY&gt;&gt; Jeff Caulfield | [[CC BY 4.0|http://creativecommons.org/licenses/by/4.0/]] | &lt;a href=&quot;/pubkey.txt&quot;&gt;&lt;i class=&quot;fa fa-key&quot;&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href=&quot;/atom.xml&quot; rel=&quot;alternate&quot; type=&quot;application/atom+xml&quot;&gt;&lt;i class=&quot;fa fa-rss&quot;&gt;&lt;/i&gt;&lt;/a&gt;</pre>
 </div>
 <div created="20171015131704205" modified="20171019073910197" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>JeffCaulfield</pre>
 </div>
-<div list="JeffCaulfield [[2017-10-17 Topics of Interest]] [[2017-10-15 A Fresh Start]]" title="$:/StoryList" revision="1" bag="default">
+<div list="JeffCaulfield [[2017-10-22 In Vera Veritas]] [[2017-10-17 Topics of Interest]] [[2017-10-15 A Fresh Start]]" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json" revision="0" bag="default">
@@ -11136,6 +11140,25 @@ I'm using [[Node.js|http://tiddlywiki.com/#GettingStarted%20-%20Node.js]] to wor
 * VimEditor
 </pre>
 </div>
+<div created="20171022095453115" modified="20171022105852272" tags="Journal" title="2017-10-22 In Vera Veritas" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>My next idea is to provide a separate CryptographicSignature file to verify that the stand-alone HTML file was actually authored by me.
+
+The first step is to [[generate|https://alexcabal.com/creating-the-perfect-gpg-keypair/]] a CryptographicKeypair and [[publish|http://www.gushi.org/make-dns-cert/HOWTO.html]] the PublicKey.
+
+```
+gpg ‐‐gen-key
+gpg --edit-key me
+&gt; addkey # RSA (sign only), 4096, 0
+&gt; save
+```
+
+Once that's done it should be simple to generate a DetachedSignature each time the website is published, which anyone can use to [[verify|https://www.gnupg.org/gph/en/manual/x135.html]] that the HTML file is authentic.
+
+```
+gpg --detach-sig index.html
+gpg --verify index.html.sig index.html
+```</pre>
+</div>
 <div created="20171017191405046" modified="20171017191649014" title="BlackdownHills" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[[blackdownhillsaonb.org.uk|http://blackdownhillsaonb.org.uk/]]
 
@@ -11203,6 +11226,69 @@ Want to explore an epic history of your own creation, hundreds or thousands of y
 &lt;&lt;&lt;
 
 Another RolePlayingSystem that seems particularly suited to producing an EmergentStory.</pre>
+</div>
+<div created="20171022110558769" modified="20171022110605724" title="PublicKey" type="text/plain" revision="0" bag="default">
+<pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+4Jryb7bzWqU7zvLu
+=cE9w
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
 </div>
 <div created="20171017182802808" modified="20171017183014134" title="VimEditor" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[[vim.org|http://vim.org/]]
